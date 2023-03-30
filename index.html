@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="Sylvain Labasse">
+
+	<title>Sylvain Labasse - Accompagnement des équipes informatique</title>
+  <style>
+    * {
+      font-family: Helvetica, Arial, Sans-serif;
+      box-sizing: border-box;
+    }
+    h1 {
+      letter-spacing: 1em;
+      font-size:1.5em;
+      margin: .5em 0;
+      padding:0;
+    }
+    body {
+      width:95%;
+      margin:auto;
+    }
+    header {
+      border-bottom: 1px solid #ccc;
+      float:left;
+      width:100%;
+    }
+    footer {
+      border-top:1px solid #ccc;
+      float:left;
+      width:100%;
+    }
+    header li {
+      list-style-type: none;
+      float:left;
+      margin:0;
+    }
+    header input {
+      visibility:hidden;
+    }
+    header ul {
+      float:right;
+      margin:0;
+      padding:0;      
+    }
+    header label, header ul a {
+      border-radius: .5em;
+      float:left;
+      padding: .2em .8em;
+      border:1px solid #777;
+      color:black;
+      text-decoration: none;
+      margin:.5em 1em;
+      color: #777;
+    }
+    header ul a.active {
+      color:white;
+      background-color: #777;
+    }
+    header ul a.special {
+      border-color: #14f;
+      color: #14f;
+    }
+    header ul a.special.active {
+      background-color: #14f;
+    }
+    main {
+      float:left;
+      column-width: 263px;
+      column-gap: 20px;
+      column-fill: balance;
+      width:100%;
+    }
+    article {
+      display: inline-block;      
+      border:1px solid #ddd;
+      padding:.5em;
+      margin:.7em 0;
+      width:100%;
+      border-radius:3px;
+    }
+    article.widget {
+      padding:0;
+      padding-left:-2px;
+    }
+    article figure {
+      padding:0;
+      margin:0;
+      width:100%;      
+    }
+    article figcaption {
+      width:100%;
+    }
+    article figcaption a {
+      display:block;
+      border-radius: .2em;
+      padding:.2em;
+      text-align:center;
+      background-color: #0077b5;
+      color:white;
+      text-decoration: none;
+    }
+    article h3 {
+      letter-spacing: .2em;
+      margin-top:.5em;
+    }
+    article video, article img {
+      width:100%;
+    }
+    article p {
+      font-size:.9em;
+      text-align: justify;
+    }
+    article ul {
+      margin-top:-.5em;
+      padding-left:1em;
+    }
+    article li {
+      font-size:.9em;      
+    }
+    header nav {
+      float:left;
+    }
+    header nav a {
+      border:0;
+      font-size:1.2em;
+      float:left;
+      margin:0;
+      color:#0077b5;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <script src='js/modernizr-custom.js'></script>
+</head>
+<body>
+  <header>
+    <h1>syllab</h1>
+    <nav>
+      <ul>
+        <li><a href='https://www.linkedin.com/in/labasse' title='LinkedIn'><span class='fa fa-linkedin-square' aria-hidden='true'></span></a>
+        <li><a href='https://twitter.com/lab4sse' title='Twitter'><span class='fa fa-twitter-square' aria-hidden='true'></span></a>
+        <li><a href='mailto:contact@syllab.com' title='Email'><span class='fa fa-envelope' aria-hidden='true'></span></a>
+        <li><a href='call:+33616336376' title='(+33)6 16 33 63 76'><span class='fa fa-phone' aria-hidden='true'></span></a>
+      </ul>
+    </nav>
+    <ul class='criteria'>
+      <li><a href='#' id='lsp' class='main'>Lego&reg; Serious Play&reg;</a>
+      <li><a href='#' id='elearn' class='main'>e-Learning</a>
+      <li><a href='#' id='train' class='main'>Formation</a>
+      <li><a href='#' id='xp' class='main'>Expertise</a>
+      <li><a href='#' id='all' class='main active'>Tout</a>      
+    </ul>
+  </header>
+  <main>
+    <article data-tags='all lsp'>
+      <h3>Démo Lego&reg; pour votre entreprise</h3>
+      <img src='img/lsp.jpg' alt='Démo'/>
+      <p>En 1h découvrez gratuitement comment la méthode Lego&reg; Serious Play&reg; peut vous aider à relever de façon innovante les défis de votre entreprise.</p>
+    </article>
+    <article data-tags='all train'>
+      <h3>Formation continue</h3>
+      <img src='img/train2.jpg' alt='Formation continue'/>
+      <p>Inter ou intra-entreprise, nous formons vos collaborateurs sur les technologies informatiques en élaborant un plan de formation sur mesure.</p>
+    </article>    
+    <article data-tags='all train elearn'>
+      <h3>Microsoft ASP.Net</h3>
+      <figure>
+        <a href='https://www.linkedin.com/learning/decouvrir-asp-net-core-1-0'><img src='img/dotnet.jpg' alt='Découverte ASP.Net core'/></a>        
+        <figcaption><a href='https://www.linkedin.com/learning/decouvrir-asp-net-core-1-0'>sur LinkedIn Learning</a></figcaption>
+      </figure>
+      <p>Développeurs C#, apprenez à créer des applications et API Web multiplateformes utilisant MVC5 et les Web Sockets.</p>
+    </article>    
+    <article data-tags='all xp'>
+      <h3>Intranet / Extranet</h3>
+      <img src='img/intranet.jpg' alt='intranet'/>
+      <p>En interne ou accessible depuis votre site, proposez des services à vos clients ou collaborateurs en lien avec votre activité et votre système d'information.</p>
+    </article>
+    <article data-tags='all lsp'>
+      <h3>Stratégie</h3>
+      <img src='img/explo3.jpg' alt='Stratégie'/>
+      <p>Les ateliers Lego&reg; Serious Play&reg; stratégiques servent à situer son activité ou son projet dans un contexte global en identifiant les partenaires et concurrents.</p>
+    </article>    
+    
+    <article data-tags='all train elearn'>
+      <h3>Langage C++</h3>
+      <figure>
+        <iframe width="100%" src="https://www.youtube.com/embed/75ax5rOpkeM?showinfo=0" frameborder="0" allowfullscreen></iframe>
+        <figcaption><a href='https://www.linkedin.com/learning/b4c8d8e0-9129-3f2c-b898-5a86cb964f90'>sur LinkedIn Learning</a></figcaption>
+      </figure>
+      <p>Au travers de 4 modules e-Learning, consolidez vos compétences :</p>
+      <ul>
+        <li><a href='https://www.linkedin.com/learning/3bc90a39-5747-3caf-8818-bec15faf4b30'>Les pointeurs intelligents</a>
+        <li><a href='https://www.linkedin.com/learning/bce80eee-49a0-325a-ab57-8cb941607a47'>La sémantique de déplacement</a>
+        <li><a href='https://www.linkedin.com/learning/b4c8d8e0-9129-3f2c-b898-5a86cb964f90'>​La gestion des erreurs avec les exceptions</a>
+        <li><a href='https://www.linkedin.com/learning/e6258ae5-881d-3257-800f-137081765434'>Création d'une bibliothèque de chaînes de caractères</a>
+      </ul>
+    </article>
+    <article data-tags='all lsp'>
+      <h3>Equipe</h3>
+      <img src='img/team.jpg' alt='Equipe'/>
+      <p>Mieux se connaître et faire ressortir les compétences de chacun, ou désamorcer les conflits latents, c'est l'enjeu d'un atelier d'équipe Lego&reg; Serious Play&reg;.</p>
+    </article>            
+    <article data-tags='all train'>
+      <h3>Formation initiale</h3>
+      <img src='img/epsi.jpg' alt='Logo epsi'/>
+      <p>L'animation d'ateliers sur les objets connectés et robotique est l'occasion d'échanges riches avec les étudiants tout en s'appuyant sur les cours donnés en algorithmie, langages objets dont C/C++ et java.</p>
+    </article>    
+    <article data-tags='all lsp'>
+      <h3>Problèmes complexes</h3>
+      <img src='img/explo4.jpg' alt='Problème complexe'/>
+      <p>Certains problèmes résistent aux méthodes classiques, Lego&reg; Serious Play&reg; propose un moyen innovant de résoudre les obstacles grâce à l'intelligence collective.</p>
+    </article>    
+    <article data-tags='all xp'>
+      <h3>Applications</h3>
+      <img src='img/app.jpg' alt='Applications'/>
+      <p>Inter ou intra-entreprise, nous formons vos collaborateurs sur les technologies informatiques en élaborant un plan de formation sur mesure.</p>
+    </article>
+    <article data-tags='all lsp'>
+      <h3>Co-Création</h3>
+      <img src='img/explo1.jpg' alt='Co-création'/>
+      <p>Pour un produit ou l'organisation d'un évènement, l'utilisation des briques Lego&reg; dans le contexte d'un jeu sérieux rend tout participant créatif. Des idées de chacun, naît une proposition homogène et innovante.</p>
+    </article>        
+    <article data-tags='all elearn train'>
+      <h3>Langage Java</h3>
+      <figure>
+        <a href='https://www.linkedin.com/learning/decouvrir-java-pour-le-web'><img src='img/java_web.jpg' alt='Découverte de java pour le Web'/></a>
+        <figcaption><a href='https://www.linkedin.com/learning/decouvrir-java-pour-le-web'>sur LinkedIn Learning</a></figcaption>
+      </figure>
+      <p>Développeurs java, apprenez par la pratique à écrire des applications MVC pour le web en utilisant les servlets, le JSP, Expression Language et les tags library.</p>
+    </article>
+    <article data-tags='all xp'>
+      <h3>e-Commerce</h3>
+      <img src='img/ecommerce.jpg' alt='e-Commerce'/>
+      <p>Nous vous accompagnons dans la mise en place dde solutions de vente en ligne vous donnent accès à un grand nombre de clients potentiels avec peu d'investissement technique.</p>
+    </article>
+    <article data-tags='all lsp'>
+      <h3>Analyse de besoin</h3>
+      <img src='img/xp.jpg' alt='Savoir'/>
+      <p>Rien n'est plus difficile que formaliser une connaissance, un savoir faire ou un besoin. La méthode Lego&reg; Serious Play&reg; aide à faire émerger les trésors cachés de l'entreprise.</p>
+    </article>    
+    <article data-tags='all xp'>
+      <h3>En direct ou via :</h3>
+      <figure>
+        <a href='https://www.hopwork.fr/profile/sylvainlabasse1'><img src='img/hopwork.jpg' alt='Logo hopwork'/></a>        
+      </figure>      
+      <p>Possibilité de passer par la plateforme hopwork pour me solliciter et sécuriser la prestation. Consultez le profil, les commentaires et les compétences.</p>
+      <p style='text-align:center'><a href="https://www.hopwork.fr/profile/sylvainlabasse1" data-id="58a2d8853ef877739b26eebd" class="hopwork_button" data-width="big" data-layout="basic" data-recos="true" data-colorscheme="blue">Hire me !</a></p>
+    </article>
+       
+  </main>
+  <footer>
+    <p>(c) Copyright Syllab 2017</p>
+  </footer>
+  <script>
+  var articles=[];
+  var cur_tag;
+
+  var truncClass = function(link, classname)  {
+    link.className = link.className.substr(0, link.className.length-classname.length-1);
+  }
+  var show = function(tag) {
+    if(cur_tag!=tag) {
+      truncClass(cur_tag, 'active');
+      tag.className += " active";
+      cur_tag = tag;
+    }
+    articles.map(function(art) {
+      art.element.style.display = art.tags.indexOf(tag.id)<0 ? 'none':'inline-block';
+    });
+  };
+  NodeList.prototype.map = function(f){
+    return Array.prototype.map.call(this, f);
+  };  
+  document.querySelectorAll("main article").map(function(art) {
+    articles.push({ element:art, tags:art.attributes['data-tags'].value.split(' ') });
+  });  
+  document.querySelectorAll(".criteria a").map(function(tag) {
+    if(tag.id=='all') {
+      cur_tag=tag;
+    }
+    tag.onclick = function(e) { show(e.target); };
+  });
+  </script>
+  <script type="text/javascript">
+    (function(d,id) {
+      if (d.getElementById(id)) return;
+      var s = d.createElement('script');
+      var c = d.getElementsByTagName('script')[0];
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'https://widgets.hopwork.com/1.0.0/js/sdk.min.js';
+      c.parentNode.insertBefore(s, c);
+      })(document,'hopwork-sdkjs-btn');
+  </script>
+</body>
+</html>
